@@ -14,7 +14,7 @@ COPY . .
 RUN mvn clean install -DskipTests
 
 # ----- Run -----
-FROM openjdk:17-slim
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
